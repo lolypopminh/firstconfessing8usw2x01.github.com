@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ส่งข้อความหาฉัน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>📩 ส่งข้อความหาฉันผ่านอีเมล</h1>
+
+    <!-- element: form -->
+    <form action="https://formspree.io/f/xnnvlkpj" method="POST">
+      <label for="name">ชื่อของคุณ</label>
+      <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" required>
+
+      <label for="email">อีเมลของคุณ</label>
+      <input type="email" id="email" name="email" placeholder="อีเมลของคุณ" required>
+
+      <label for="message">ข้อความของคุณ</label>
+      <textarea id="message" name="message" rows="5" placeholder="เขียนข้อความของคุณที่นี่..." required></textarea>
+
+      <button type="submit" id="formbutton">ส่งข้อความ</button>
+    </form>
+  </main>
+</body>
+
+</html>

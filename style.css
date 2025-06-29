@@ -1,0 +1,125 @@
+/* จัดการลักษณะของ body ทั้งหน้า */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e877ff; /* พื้นหลังสีชมพูอ่อน */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* ให้สูงเต็มจอ */
+  text-align: center;
+}
+
+/* ครอบเนื้อหาทั้งหมด */
+.container {
+  padding: 20px;
+}
+
+/* จัดหัวเรื่องให้ดูใหญ่และเด่น */
+h1 {
+  animation: fadeIn 2s ease-in-out;
+  font-size: 2.5em;
+  color: #ff1493; /* สีชมพูเข้ม */
+  margin-bottom: 0px;
+}
+
+/* จัด paragraph */
+p{
+  animation: fadeIn 2s ease-in-out;
+  font-size: 1.4em;
+  color: #eeff00; /*สีชมพูเข้ม */
+  margin-top : 0px;
+  margin-bottom : 45px;
+}
+
+/* รูปภาพสำหรับหน้าแรก */
+.img {
+  transition : transform 0.3s ease;
+  width: 300px;
+  height: auto;
+  border-radius: 15px; /* ขอบมน */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* เงาเบาๆ */
+}
+.img:hover {
+  transform: scale(1.05);
+}
+
+/* กลุ่มปุ่มให้อยู่ตรงกลางและห่างกัน */
+.btn-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+/* รูปแบบปุ่ม */
+button {
+  background-color: #ff69b4; /* สีชมพู */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* ทำให้เปลี่ยนสีลื่น */
+  animation : fadeIn 2s ease-in-out
+}
+
+/* เมื่อเมาส์วางบนปุ่ม */
+button:hover {
+  background-color: #ff1493; /* สีชมพูเข้ม */
+  font-size: 1.3em;
+}
+
+.description {
+  font-size : 20.2px;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#formbutton {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#formbutton:hover {
+  background-color: #ff1493;
+  font-size: 20.2px;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #ff1493; /* สีชมพูเข้ม */
+  border-color: #ff1493;
+}
+
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
