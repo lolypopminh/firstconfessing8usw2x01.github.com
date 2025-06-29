@@ -1,18 +1,23 @@
 /* จัดการลักษณะของ body ทั้งหน้า */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;   
-  background-image: url('valentinebg.jpg');      /*พื้นหลังเป็นรุปภาพ*/
+  font-family: 'Arial', sans-serif;
+  background-image: url('valentinebg.jpg');
+  /*พื้นหลังเป็นรุปภาพ*/
   /* background-color: #e877ff;    พื้นหลังสีชมพูอ่อน */
-  background-size: cover;         /*ขยายให้เต็มขอบจอ*/
-  background-position: center;    /*จักให้อยู่กึ่งกลาง*/
-  background-repeat: no-repeat;   /*ไม่่ให้รูปซ้ำ*/
+  background-size: cover;
+  /*ขยายให้เต็มขอบจอ*/
+  background-position: center;
+  /*จักให้อยู่กึ่งกลาง*/
+  background-repeat: no-repeat;
+  /*ไม่่ให้รูปซ้ำ*/
 
   color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* ให้สูงเต็มจอ */
+  min-height: 100vh;
+  /* ให้สูงเต็มจอ */
   text-align: center;
 }
 
@@ -25,29 +30,44 @@ body {
 h1 {
   animation: fadeIn 2s ease-in-out;
   font-size: 2.5em;
-  color: #ff1493; /* สีชมพูเข้ม */
-  margin-bottom: 0px;
+  color: #ff00bf;
+  /* สีชมพูเข้ม */
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
 }
 
 /* จัด paragraph */
-p{
+p {
   animation: fadeIn 2s ease-in-out;
   font-size: 1.4em;
-  color: #eeff00; /*สีชมพูเข้ม */
-  margin-top : 0px;
-  margin-bottom : 45px;
+  color: #ff00bf;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
 }
 
 /* รูปภาพสำหรับหน้าแรก */
 .img {
-  transition : transform 0.3s ease;
+  transition: transform 0.3s ease;
   animation: fadeIn 2s ease-in-out;
   width: 300px;
   height: auto;
-  border-radius: 15px; /* ขอบมน */
+  border-radius: 15px;
+  /* ขอบมน */
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* เงาเบาๆ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* เงาเบาๆ */
 }
+
 .img:hover {
   transform: scale(1.05);
 }
@@ -62,30 +82,39 @@ p{
 
 /* รูปแบบปุ่ม */
 button {
-  background-color: #ff69b4; /* สีชมพู */
+  background-color: #ff69b4;
+  /* สีชมพู */
   border: none;
   color: white;
   padding: 15px 25px;
   font-size: 1.2em;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* ทำให้เปลี่ยนสีลื่น */
-  animation : fadeIn 2s ease-in-out
+  transition: background-color 0.3s ease;
+  /* ทำให้เปลี่ยนสีลื่น */
+  animation: fadeIn 2s ease-in-out
 }
 
 /* เมื่อเมาส์วางบนปุ่ม */
 button:hover {
-  background-color: #ff1493; /* สีชมพูเข้ม */
+  background-color: #ff1493;
+  /* สีชมพูเข้ม */
   font-size: 1.3em;
   scale: 1.05;
 }
 
 .description {
-  font-size : 20.2px;
+  font-size: 20.2px;
 }
+
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 form {
@@ -94,6 +123,11 @@ form {
   gap: 15px;
   width: 300px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 
 textarea {
@@ -103,6 +137,7 @@ textarea {
   border: 1px solid #ccc;
   animation: fadeIn 2s ease-in-out;
 }
+
 textarea:hover {
   scale: 1.05;
 }
@@ -115,9 +150,11 @@ textarea:hover {
   animation: fadeIn 2s ease-in-out;
   background-color: white;
 }
+
 #email:hover {
-  scale:1.05;
+  scale: 1.05;
 }
+
 #name {
   padding: 10px;
   font-size: 1em;
@@ -126,8 +163,9 @@ textarea:hover {
   animation: fadeIn 2s ease-in-out;
   background-color: white;
 }
+
 #name:hover {
-  scale:1.05;
+  scale: 1.05;
 }
 
 #formbutton {
@@ -146,8 +184,9 @@ textarea:hover {
   font-size: 20.2px;
 }
 
-input:focus, textarea:focus {
-  outline: 2px solid #ff1493; /* สีชมพูเข้ม */
+textarea:focus {
+  outline: 2px solid #ff1493;
+  /* สีชมพูเข้ม */
   border-color: #ff1493;
 }
 
@@ -157,4 +196,29 @@ form label {
   margin-bottom: 5px;
   text-align: left;
   animation: fadeIn 2s ease-in-out;
+  color: #ff1493;
+}
+
+/*ปุ่มเส็จรสิ้น*/
+.nexttofinal {
+  background-color: #ff69b4;
+  /* สีชมพู */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* ทำให้เปลี่ยนสีลื่น */
+  animation: fadeIn 2s ease-in-out;
+  margin-top: 10px;
+}
+
+/* เมื่อเมาส์วางบนปุ่มเส็จรสิ้น */
+.nexttofinal:hover {
+  background-color: #ff1493;
+  /* สีชมพูเข้ม */
+  font-size: 1.3em;
+  scale: 1.05;
 }
