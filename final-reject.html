@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>สุดท้าย</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <!-- <title>form-reject</title>
+  <link rel="stylesheet" href="style.css"> -->
 </head>
+
 <body>
   <main class="container">
-    <h1>💌 ยังไงก็ขอบคุณที่ตอบนะแต่ถึงยังไงเราก็คงดีไม่พออยู่ดี </h1> <!-- ข้อความสุดท้าย -->
-    <p class = "description">การได้บอกความรู้สึกออกไปก็มีความหมายแล้ว ❤️</p>
-    
-    <div style="margin-top: 40px;">
-      <button onclick="location.href='index.html'">กลับไปหน้าแรก</button>
-    </div>
+    <h1>😢 เข้าใจนะ ขอบคุณที่บอกตรงๆ</h1>
+    <form action="https://formspree.io/f/xnnvlkpj" method="POST">
+      <!-- กรอกชื่อ -->
+      <label for="name">ชื่อของคุณ</label>
+      <textarea id="name" name="name" rows="1" placeholder="ชื่อของคุณ" required></textarea>
+
+      <!-- กรอกอีเมล -->
+      <label for="email">อีเมลของคุณ</label>
+      <textarea id="email" name="email" rows="1" placeholder="อีเมลของคุณ" required></textarea>
+
+      <label for="message">มีอะไรอยากบอกไหม?</label>
+      <textarea id="message" name="message" rows="5" placeholder="เขียนข้อความที่นี่..." required></textarea>
+
+      <button type="submit" id="formbutton">ส่งข้อความ</button>
+    </form>
+    <button class="nexttofinal" onclick="location.href = 'final-reject.html'"> เส็จรสิ้น </button>
   </main>
 </body>
+
 </html>
