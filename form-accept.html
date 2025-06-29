@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form-accept</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>🎉 ดีใจมากเลยที่ตอบตกลง</h1>
+    <form action="https://formspree.io/f/xnnvlkpj" method="POST">
+      <!-- กรอกชื่อ -->
+      <label for="name">ชื่อของคุณ</label>
+      <textarea id="name" name="name" rows="1" placeholder="ชื่อของคุณ" required></textarea>
+
+      <!-- กรอกอีเมล -->
+      <label for="email">อีเมลของคุณ</label>
+      <textarea id="email" name="email" rows="1" placeholder="อีเมลของคุณ" required></textarea>
+
+      <label for="message">อยากบอกอะไรเราบ้างไหม?</label>
+      <textarea id="message" name="message" rows="5" placeholder="เขียนข้อความที่นี่..." required></textarea>
+
+      <button type="submit" id="formbutton">ส่งข้อความ</button>
+    </form>
+    <button id="nexttofinal" onclick="location.href = 'final-accept.html'"> เส็จรสิ้น </button>
+  </main>
+</body>
+
+</html>
